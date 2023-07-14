@@ -30,19 +30,23 @@
     <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; display: flex; flex-direction: row; justify-content: center; align-items: center;  page-break-before: always; ">
         <img src="https://www.saren.com.br/ws/media-library/b1f96cc81b094b3db7d0eb2c568172e1/saren-logo-400px.png" style="opacity: 0.05; width: 100%; " alt="Marca d'água">
     </div>
-    
-    
-    
     <div class="ui container" style="display: block; max-width: 100%;">
         <table class="ui table celled unstackable fixed blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; margin-top: 0em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
             <tr>
-                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
-                    <strong>{TIPO_PEDIDO}:</strong> {PEDIDO}<br/>
-                    <strong>Data:</strong> {DATAPEDIDO}<br/>
-                    <strong>Status:</strong> {STATUS}
+                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; background-color: rgba(167, 203, 230, 0.2);  border: 1px solid rgba(34, 36, 38, 0.15); width: 25%;" width="25%">
+                    <strong style="margin-left: 1em; ">{TIPO_PEDIDO}<br/>
+                    <strong style="margin-left: 1em; ">Número Pedido no Cliente(PO):</strong> {SEUPEDIDO} <br/>  
+                    <strong style="margin-left: 1em; ">Data:</strong> {DATAPEDIDO}<br/>
+                    <strong style="margin-left: 1em; ">Status:</strong> {STATUS}<br/>        
+                    <strong style="margin-left: 1em; ">Nosso Vendedor:</strong> {REPRESEN.RAZAOSOCIAL} -  <a href="mailto:{REPRESEN.EMAIL}"><span>{REPRESEN.EMAIL}</span></a> <br/>
+                    <strong style="margin-left: 1em; ">Número do Pedido:</strong> {PEDIDO} 
                 </td>
             </tr>
         </table>
+
+
+
+
         <table class="ui table celled unstackable fixed blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
             <tr>
                 <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none;">
