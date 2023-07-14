@@ -1,6 +1,6 @@
 <html>
 <!--HEADER-->
-<body style="margin: 0px; padding: 0px; overflow-x: hidden; min-width: 320px; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; line-height: 1.4285em; color: rgba(0, 0, 0, 0.87); font-smooth: antialiased; font-size: 10px; padding-top: 20px;">
+<body style="margin: 0px; overflow-x: hidden; min-width: 320px; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; line-height: 1.4285em; color: rgba(0, 0, 0, 0.87); font-smooth: antialiased; font-size: 10px;">
     <div style=" position: relative; text-align: center; background-size: cover; background-position: center; z-index: 1; ">
         <img src="https://i.pinimg.com/564x/9d/73/dc/9d73dc08dc375c4279dd899c267f592d.jpg" style="width: 100%; height: 100%;" alt="capa"> 
         <p style="line-height: 1; color: rgb(255, 255, 255); position: absolute; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%);">
@@ -139,21 +139,21 @@
         <!--/ENDCOBRANCA-->
         <!--SUBHEADER-->
 
-        <div style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding-left: 0.78571429em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); margin-top: -0.14285em; margin-bottom: 0em; font-size: 1.28em;">PRODUTOS</div>
-        <div style="padding-left: 1em; font-style: italic; font-weight: bold;">Esta cotação é válida até: {DATAVALIDADE}</div>     
         <table style="width: 100%; margin: 1em 0em; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 0.9em;" width="100%" align="left">
+            <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding-left: 1em ; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); font-size: 1.28em;"> PRODUTOS </div>
+            <div style="padding-left: 1em; font-style: italic; font-weight: bold;">Esta cotação é válida até: {DATAVALIDADE}</div>     
             <thead>
-                <tr>
-                    <th style="text-align: center; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; border-radius: 0.28571429rem 0em 0em 0em; padding-left: 0.7em; padding-right: 0.7em; border-left: none;border-top: 0.2em solid #2185D0; font-size: 0.7rem;">#</th>
-                    <th style="text-align: center; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em;border-top: 0.2em solid #2185D0; font-size: 0.7rem;">Imagem</th>
-                    <th style="text-align: center; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; border-top: 0.2em solid #2185D0; font-size: 0.7rem;">Descrição do Produto</th>                                        
-                    <th style="text-align: center; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; border-top: 0.2em solid #2185D0; font-size: 0.7rem;">Marca</th>                                        
-                    <th style="text-align: center; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; border-top: 0.2em solid #2185D0; font-size: 0.7rem;">Un</th>                                        
-                    <th style="text-align: right; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; border-top: 0.2em solid #2185D0; font-size: 0.7rem;">Qtd</th>   					
-                    <th style="text-align: right; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; border-top: 0.2em solid #2185D0; font-size: 0.7rem;">Preço <br/> Unitário</th>
-                    <th style="text-align: right; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; border-top: 0.2em solid #2185D0; font-size: 0.7rem;">Valor IPI</th>
-                    <th style="text-align: right; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; border-top: 0.2em solid #2185D0; font-size: 0.7rem;">ST</th>
-                    <th style="text-align: right; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; border-radius: 0em 0.28571429rem 0em 0em; padding-left: 0.7em; padding-right: 0.7em; border-top: 0.2em solid #2185D0; font-size: 0.7rem;">Preço Total</th>
+                <tr style=" border-top: 0.2em solid #2185D0; font-size: 0.7rem;">
+                    <th style="text-align: center; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; border-radius: 0.28571429rem 0em 0em 0em; padding-left: 0.7em; padding-right: 0.7em; border-left: none;">#</th>
+                    <th style="text-align: center; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em;">Imagem</th>
+                    <th style="text-align: center; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; ">Descrição do Produto</th>                                        
+                    <th style="text-align: center; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; ">Marca</th>                                        
+                    <th style="text-align: center; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; ">Un</th>                                        
+                    <th style="text-align: right; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; ">Qtd</th>   					
+                    <th style="text-align: right; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; ">Preço <br/> Unitário</th>
+                    <th style="text-align: right; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; ">Valor IPI</th>
+                    <th style="text-align: right; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; padding-left: 0.7em; padding-right: 0.7em; ">ST</th>
+                    <th style="text-align: right; color: rgb(46, 58, 120); padding: 0.92857143em 0.78571429em; border-radius: 0em 0.28571429rem 0em 0em; padding-left: 0.7em; padding-right: 0.7em;">Preço Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -242,7 +242,7 @@
 					(c) A transferência da propriedade dos Produtos dar-se-á mediante o pagamento integral do valor correspondente ao(s) Produto(s).<br/>
 					
                     <strong>CONCORDÂNCIA:</strong><br/>
-                    Declaro forfalmente que li, compreendi e aceito integralmente as condições comerciais e técnicas apresentadas nas proposta comercial supracitadas<br/>
+                    Declaro forfalmente que li, compreendi e aceito integralmente as condições comerciais e técnicas apresentadas nas proposta comercial supracitadas<br/><br/><br/>
                     __________________________________________ <br/>
                     Razão Social:  <br/>
                     CNPJ:  
