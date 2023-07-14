@@ -10,21 +10,32 @@
             <strong style="font-size: 1.5rem;">Data: {DATAPEDIDO} </strong>
         </p>
     </div>
+    <div>
+        <table style="width: 100%; margin: 1em 0em; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; margin-top: 0em; table-layout: fixed; " width="100%" align="left">
+            <tr>
+                <td class="twelve wide" style="padding-top: 2em; text-align: inherit; border-top: none; border-left: none; width: 75%; z-index: 2;" width="75%">
+                    <a href="https://www.saren.com.br/">
+                        <img class="ui left floated small image" src="{IMAGEMLOGO}" style="box-shadow: 0px 0px 10px 0px #888888; border: 0; position: relative; background-color: transparent; display: block; margin-right: 1em; margin-bottom: 1em; width: 150px; height: auto; max-width: none; margin-left: 1em;" width="150">
+                    </a>
+                    <td class="four wide" style="border-top: none; width: 50%; padding-right: 1em;" width="25%">
+                        <strong>{FILIAL.ABREVIATURA} - {EMPRESA.RAZAOSOCIAL}</strong> <br/>
+                        {FILIAL.ENDERECO} {FILIAL.NUMEROEND} {FILIAL.COMPLEMENTOEND} - {FILIAL.MUNICIPIO} <br/>
+                        {FILIAL.UF} - CEP {FILIAL.CEP} - Tel. {FILIAL.TELEFONE}<br/>
+                        CNPJ: {FILIAL.CNPJ} - Inscr.Estadual {FILIAL.IE}
+                    </td>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; display: flex; flex-direction: row; justify-content: center; align-items: center;  page-break-before: always; ">
+        <img src="https://www.saren.com.br/ws/media-library/b1f96cc81b094b3db7d0eb2c568172e1/saren-logo-400px.png" style="opacity: 0.05; width: 100%; " alt="Marca d'água">
+    </div>
     
     
     
     <div class="ui container" style="display: block; max-width: 100%;">
         <table class="ui table celled unstackable fixed blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; margin-top: 0em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
             <tr>
-                <td class="twelve wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none; width: 75%;" width="75%">
-                    <img class="ui left floated small image" src="{IMAGEMLOGO}" style="border: 0; position: relative; background-color: transparent; display: block; float: left; margin-right: 1em; margin-bottom: 1em; width: 150px; height: auto; font-size: 0.92857143rem; max-width: none;" width="150">
-                    <p style="margin: 0em 0em 1em; line-height: 1.4285em; margin-bottom: 0em;">
-                        <strong>{FILIAL.ABREVIATURA} - {EMPRESA.RAZAOSOCIAL}</strong> <br/>
-                        {FILIAL.ENDERECO} {FILIAL.NUMEROEND} {FILIAL.COMPLEMENTOEND} – {FILIAL.MUNICIPIO} <br/>
-                        {FILIAL.UF} - CEP {FILIAL.CEP} - Tel. {FILIAL.TELEFONE}<br/>
-                        CNPJ: {FILIAL.CNPJ} - Inscr.Estadual {FILIAL.IE}
-                    </p>
-                </td>
                 <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
                     <strong>{TIPO_PEDIDO}:</strong> {PEDIDO}<br/>
                     <strong>Data:</strong> {DATAPEDIDO}<br/>
@@ -32,7 +43,6 @@
                 </td>
             </tr>
         </table>
-
         <table class="ui table celled unstackable fixed blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
             <tr>
                 <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none;">
