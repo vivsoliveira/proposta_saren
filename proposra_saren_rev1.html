@@ -43,10 +43,6 @@
                 </td>
             </tr>
         </table>
-
-
-
-
         <table class="ui table celled unstackable fixed blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
             <tr>
                 <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none;">
@@ -74,6 +70,10 @@
                     <strong>E-mail:</strong>  <a href="mailto:{CLIENTE.EMAIL}"><span>{CLIENTE.EMAIL}</span></a> 
                 </td>
             </tr>
+
+
+
+
             <tr>
                 <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none;">
                     <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); margin-top: -0.14285em; margin-bottom: 0em; font-size: 1.28em;"> CONDIÇÕES </div>
@@ -95,22 +95,74 @@
 
 
 
-        <!-- <div style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding-left: 0.78571429em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); margin-top: -0.14285em; margin-bottom: 0em; font-size: 1.28em;">PRODUTOS</div>
-        <div style="padding-left: 1em; font-style: italic; font-weight: bold;">Esta cotação é válida até: {DATAVALIDADE}</div>     -->
+
+        <!--/HEADER-->
+        <!--ENDENTREGA-->
+        <table class="ui table celled unstackable fixed blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
+            <tr>
+                <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none;">
+                    <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); margin-top: -0.14285em; margin-bottom: 0em; font-size: 1.28em;"> ENTREGA </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none; width: 50%;" width="50%">
+                    <strong>Endereço:</strong> {ENDENT}<br/>
+                    <strong>Município:</strong> {MUNENT} 
+                </td>
+                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
+                    <strong>UF:</strong> {UFENT} <br/>
+                    <strong>Bairro:</strong> {BAIENT} 
+                </td>
+                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
+                     <strong>CEP:</strong> {CEPENT}  
+                    
+                </td>
+            </tr>
+        </table>
+        <!--/ENDENTREGA-->
+        <!--ENDCOBRANCA-->
+        <table class="ui table celled unstackable fixed blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
+            <tr>
+                <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none;">
+                    <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); margin-top: -0.14285em; margin-bottom: 0em; font-size: 1.28em;"> COBRANÇA </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none; width: 50%;" width="50%">
+                    <strong>Endereço:</strong> {ENDCOB}<br/>
+                    <strong>Município:</strong> {MUNCOB} 
+                </td>
+                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
+                    <strong>UF:</strong> {UFCOB} <br/>
+                    <strong>Bairro:</strong> {BAICOB}
+                </td>
+                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
+                    <strong>CEP:</strong> {CEPCOB}
+                </td>
+            </tr>
+        </table>
+        <!--/ENDCOBRANCA-->
+        <!--SUBHEADER-->
+
+
+
+
+        <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); font-size: 1.28em;"> PRODUTOS </div>
+        <div style="padding-left: 1em; font-style: italic; font-weight: bold;">Esta cotação é válida até: {DATAVALIDADE}</div>    
         <table style="width: 100%; margin: 1em 0em; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 0.9em;" width="100%" align="left">
             <thead>
                 <tr>
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); border-radius: 0.28571429rem 0em 0em 0em; padding-left: 0.7em; padding-right: 0.7em; border-left: none;">#</th>
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Produto</th>
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Descrição</th>                                        
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Un</th>                                        
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Qd</th>   					
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Preço Unitário</th>
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Preço Sem IPI</th>
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Valor IPI</th>
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">ST</th>
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">% Desc.</th>
-                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); border-radius: 0em 0.28571429rem 0em 0em; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Preço Total Com IPI</th>
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); border-radius: 0.28571429rem 0em 0em 0em; padding-left: 0.7em; padding-right: 0.7em; border-left: none;">#</th>
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Produto</th>
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Descrição</th>                                        
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Un</th>                                        
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Qd</th>   					
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Preço Unitário</th>
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Preço Sem IPI</th>
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Valor IPI</th>
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">ST</th>
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">% Desc.</th>
+                    <th style="text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); border-radius: 0em 0.28571429rem 0em 0em; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Preço Total Com IPI</th>
                 </tr>
             </thead>
             <tbody>
@@ -129,19 +181,20 @@
                     <td class="right aligned" style="border-top: none; text-align: right; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" align="right">{PERCDESC}</td>
                     <td class="right aligned" style="border-top: none; text-align: right; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" align="right">{VALTOTAL}</td>
                 </tr>   
-              
+
             <!--/BODY-->
             <!--SUBTOTAL1-->
             </tbody>
             <tfoot style="box-shadow: none;"> 
+            <tfoot> 
                 <tr>
-                    <th class="right aligned" colspan="6" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; border-radius: 0em 0em 0em 0.28571429rem; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: none;" valign="middle" align="right">Total dos Produtos</th>
-                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right">{PRECOSEMIPI}</th>
-                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right">{VALIPI}</th>
-                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right"></th>
-                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right"></th>
-                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; border-radius: 0em 0em 0.28571429rem 0em; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right">{VALTOTAL}</th>
-                </tr>                                    
+                    <th class="right aligned" colspan="6" style="border-top: 1px solid rgba(34, 36, 38, 0.15); color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; border-radius: 0em 0em 0em 0.28571429rem; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: none;" valign="middle" align="right">Total dos Produtos</th>
+                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right">{PRECOSEMIPI}</th>
+                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right">{VALIPI}</th>
+                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right"></th>
+                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right"></th>
+                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; border-radius: 0em 0em 0.28571429rem 0em; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right">{VALTOTAL}</th>
+                </tr>                                                                   
             </tfoot>
         </table>
 
@@ -172,24 +225,20 @@
 					Os preços desta e qualquer oferta, confirmação ou Contrato são em moeda brasileira e poderão sofrer alteração de acordo com a variação cambial do dolar, conforme
 					descrito nos Termos e Condições Gerais de Venda da Fornecedora. A empresa adicionará impostos, encargos e tributos em caráter de substituto tributário ao preço das vendas
 					quando for exigida por lei a pagá-los ou cobrá-los, e esses serão pagos pelo Cliente juntamente com o preço. <br/>
-
 					<strong>GARANTIA DOS PRODUTOS<br/></strong>
 					 A Fornecedora garante que, de acordo com o uso normal em conformidade com o manual de usuário aplicável, os Produtos possuirão garantia de acordo com o
 					disposto no documento denominado Termos e Condições da Garantia, a ser disponibilizado pela Fornecedora ao Cliente e/ou disponível em seu website, no endereço
 					http://www.lighting.philips.com.br/suporte/suporte-para-produtos/garantia. Nos casos de sistemas e serviços a Fornecedora enviará uma Proposta Técnica a ser assinada em conjunto com a presente Proposta Comercial, com vistas a esclarecer
 					eventuais especificidades aplicáveis.<br/>
-
 					<strong>CONDIÇÕES COMERCIAIS:</strong><br/>
 					A validação da presente proposta depende de aprovação de crédito da instituição financeira financiadora. A Fornecedora não se responsabiliza por atos de terceiros, sejam particulares, órgãos oficiais, ou quaisquer outras organizações que alterem, independentemente da vontade das partes aqui envolvidas, os termos e condições aqui apresentados.
 					Estão exclusos do escopo desta proposta todo e qualquer serviço e/ou materiais não descritos no escopo acima. 
 					Para o caso de pessoa jurídica, o(s) signatário(s) desta proposta, declara(m), sob a pena da lei que tem poderes para assinar e assumir compras desta natureza em nome da sociedade.<br/>
-
 					<strong>LIMITAÇÃO DE RESPONSABILIDADE:</strong><br/>
 					A Fornecedora não será responsável por quaisquer lucros cessantes, danos indiretos, incidentes ou punitivos, decorrentes do, ou relacionados ao contrato ou à venda
 					de quaisquer produtos ou serviços pela Fornecedora, ou ao uso dos mesmos, ainda que a Fornecedora tenha sido avisada, ou estiver ciente, da possibilidade desses danos.
 					A responsabilidade da Fornecedora perante ao Cliente de acordo com qualquer contrato não excederá a 20% (vinte por cento) da venda do Produto ou serviço
 					relacionado.<br/>
-
 					<strong>ENTREGA E QUANTIDADES:</strong><br/>
 					(a ) Os Produtos serão entregues conforme especificado na Proposta ou acordado posteriormente com o Cliente, por escrito. As datas de entrega
 					comunicadas ou reconhecidas pela Fornecedora poderão ser meramente estimativas. A Fornecedora envidará todos os esforços comercialmente razoáveis para cumprir
