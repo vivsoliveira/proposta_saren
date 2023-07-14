@@ -49,27 +49,35 @@
 
         <table class="ui table celled unstackable fixed blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
             <tr>
-                <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none;">
-                    <div class="ui HEADER"> FATURAMENTO </div>
-                    <strong>Cliente:</strong> {CLIENTE} - {CLIENTE.RAZAOSOCIAL} - ({CLIENTE.NOMEFANTASIA})
+                <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none;">
+                    <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); margin-top: -0.14285em; margin-bottom: 0em; font-size: 1.28em;"> FATURAMENTO </div>
                 </td>
             </tr>
+            <tr>
+                <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none;">
+                    <strong>Cliente:</strong> {CLIENTE} - {CLIENTE.RAZAOSOCIAL} - ({CLIENTE.NOMEFANTASIA})<br/>
+                </td>
+            </tr>        
             <tr>
                 <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none; width: 50%;" width="50%">
                     <strong>CNPJ:</strong> {CNPJ} <br/>
                     <strong>Endereço:</strong> {ENDERECO} <br/>
                     <strong>Bairro:</strong> {BAIRRO} <br/>
-                    <strong>Contato:</strong> {CONTATO.NOME}
-                    <strong>E-mail:</strong> {CLIENTE.EMAIL} <br/>
+                    <strong>Contato:</strong> {CONTATO.NOME} <br/>
+                    <strong>Contato E-mail:</strong>  <a href="mailto:{CONTATO.EMAIL}">{CONTATO.EMAIL}</a> 
                 </td>
                 <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 50%;" width="50%">
                     <strong>Insc. Estadual:</strong> {INSCESTADUAL} <br/>
                     <strong>Município:</strong> {MUNICIPIO} - {UF} <br/>
-                    <strong>CEP:</strong> {CEP}
-                    <strong>Telefone:</strong> {CLIENTE.TELEFONE} <br/>                                    
-                    <strong>Contato E-mail:</strong> {CONTATO.EMAIL}
+                    <strong>CEP:</strong>{CEP}<br/>                    
+                    <strong>Telefone:</strong>  <a href="tel:{CLIENTE.TELEFONE}">{CLIENTE.TELEFONE}</a><br/>
+                    <strong>E-mail:</strong>  <a href="mailto:{CLIENTE.EMAIL}"><span>{CLIENTE.EMAIL}</span></a> 
                 </td>
             </tr>
+
+
+
+            
             <tr>
                 <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none;">
                     <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); margin-top: -0.14285em; margin-bottom: 0em; font-size: 1.28em;"> CONDIÇÕES </div>
@@ -96,6 +104,11 @@
                 </td>
             </tr>
         </table>
+
+
+
+
+
         <!--/HEADER-->
         <!--ENDENTREGA-->
         <table class="ui table celled unstackable fixed blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
@@ -143,6 +156,11 @@
         </table>
         <!--/ENDCOBRANCA-->
         <!--SUBHEADER-->
+
+
+
+
+
         <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); font-size: 1.28em;"> PRODUTOS </div>
         <table class="ui table celled compact small unstackable blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; border-top: 0.2em solid #2185D0; font-size: 0.9em;" width="100%" align="left">
             <thead>
