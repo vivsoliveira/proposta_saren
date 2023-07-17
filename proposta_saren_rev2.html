@@ -267,79 +267,82 @@
     </div>
 	<div style="page-break-after:auto;"></div>
     <script>
-        window.addEventListener('load', function() {
-          const pageBreak = document.querySelector('.page-break');
-          const conteudo = document.querySelector('.conteudo');
-          const tamanhoMargem = 20; // Defina o tamanho da margem em pixels
-    
-          // Função para adicionar margem após a quebra de página
-          function adicionarEspacoAposQuebra() {
-            const elementos = conteudo.getElementsByTagName('p');
-            const primeiraLinhaProximaPagina = elementos[0].offsetTop;
-            const alturaCabecalho = pageBreak.offsetHeight;
-            elementos[0].style.marginTop = (primeiraLinhaProximaPagina + alturaCabecalho + tamanhoMargem) + 'px';
-          }
-    
-          // Verifica se ocorreu uma quebra de página após o carregamento da página
-          if (window.pageYOffset > 0) {
-            adicionarEspacoAposQuebra();
-          }
-    
-          // Adiciona o evento para verificar se ocorreu uma quebra de página após rolar a página
-          window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 0) {
-              adicionarEspacoAposQuebra();
-            }
-          });
-        });
-
-        function enviarEmailRepresentante() {
-            // Obter o valor da variável
-            const emailDestinatario = '{REPRESEN.EMAIL}'
-
-            // Construir o link com o valor da variável
-            const linkEmail = "mailto:" + emailDestinatario;
-
-            // Redirecionar o usuário para o link de email
-            window.location.href = linkEmail;
-        }
-        document.getElementById('enviaremailrepresentante').addEventListener('click', enviarEmailRepresentante);
-
-        function enviarEmailContato() {
-            // Obter o valor da variável
-            const emailDestinatario = '{CONTATO.EMAIL}'
-
-            // Construir o link com o valor da variável
-            const linkEmail = "mailto:" + emailDestinatario;
-
-            // Redirecionar o usuário para o link de email
-            window.location.href = linkEmail;
-        }
-        document.getElementById('enviaremailcontato').addEventListener('click', enviarEmailContato);
-
-        function ligacaoparaCliente() {
-            // Obter o valor da variável
-            const telefoneDestinatario = '{CLIENTE.TELEFONE}'
-
-            // Construir o link com o valor da variável
-            const linkEmail = "tel:" + telefoneDestinatario;
-
-            // Redirecionar o usuário para o link de email
-            window.location.href = linkEmail;
-        }
-        document.getElementById('ligarcliente').addEventListener('click', ligacaoparaCliente);
+        document.addEventListener("DOMContentLoaded", function() {
+            // window.addEventListener('load', function() {
+            //     const pageBreak = document.querySelector('.page-break');
+            //     const conteudo = document.querySelector('.conteudo');
+            //     const tamanhoMargem = 20; // Defina o tamanho da margem em pixels
         
-        function enviarEmailCliente() {
-            // Obter o valor da variável
-            const emailDestinatario = '{CLIENTE.EMAIL}'
+            // // Função para adicionar margem após a quebra de página
+            // function adicionarEspacoAposQuebra() {
+            //     const elementos = conteudo.getElementsByTagName('p');
+            //     const primeiraLinhaProximaPagina = elementos[0].offsetTop;
+            //     const alturaCabecalho = pageBreak.offsetHeight;
+            //     elementos[0].style.marginTop = (primeiraLinhaProximaPagina + alturaCabecalho + tamanhoMargem) + 'px';
+            // }
+        
+            // // Verifica se ocorreu uma quebra de página após o carregamento da página
+            // if (window.pageYOffset > 0) {
+            //     adicionarEspacoAposQuebra();
+            // }
+        
+            // // Adiciona o evento para verificar se ocorreu uma quebra de página após rolar a página
+            // window.addEventListener('scroll', function() {
+            //     if (window.pageYOffset > 0) {
+            //     adicionarEspacoAposQuebra();
+            //     }
+            // });
+            // });
 
-            // Construir o link com o valor da variável
-            const linkEmail = "mailto:" + emailDestinatario;
+            function enviarEmailRepresentante() {
+                // Obter o valor da variável
+                const emailDestinatario = '{REPRESEN.EMAIL}'
 
-            // Redirecionar o usuário para o link de email
-            window.location.href = linkEmail;
-        }
-        document.getElementById('enviaremailcliente').addEventListener('click', enviarEmailCliente);
+                // Construir o link com o valor da variável
+                const linkEmail = "mailto:" + emailDestinatario;
+
+                // Redirecionar o usuário para o link de email
+                window.location.href = linkEmail;
+            }
+            document.getElementById('enviaremailrepresentante').addEventListener('click', enviarEmailRepresentante);
+
+            function enviarEmailContato() {
+                // Obter o valor da variável
+                const emailDestinatario = '{CONTATO.EMAIL}'
+
+                // Construir o link com o valor da variável
+                const linkEmail = "mailto:" + emailDestinatario;
+
+                // Redirecionar o usuário para o link de email
+                window.location.href = linkEmail;
+            }
+            document.getElementById('enviaremailcontato').addEventListener('click', enviarEmailContato);
+
+            function ligacaoparaCliente() {
+                // Obter o valor da variável
+                const telefoneDestinatario = '{CLIENTE.TELEFONE}'
+
+                // Construir o link com o valor da variável
+                const linkEmail = "tel:" + telefoneDestinatario;
+
+                // Redirecionar o usuário para o link de email
+                window.location.href = linkEmail;
+            }
+            document.getElementById('ligarcliente').addEventListener('click', ligacaoparaCliente);
+            
+            function enviarEmailCliente() {
+                // Obter o valor da variável
+                const emailDestinatario = '{CLIENTE.EMAIL}'
+
+                // Construir o link com o valor da variável
+                const linkEmail = "mailto:" + emailDestinatario;
+
+                // Redirecionar o usuário para o link de email
+                window.location.href = linkEmail;
+            }
+            document.getElementById('enviaremailcliente').addEventListener('click', enviarEmailCliente);
+        });
+        
     </script>
 </body>
 <!--/SUBTOTAL1-->
