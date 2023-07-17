@@ -32,11 +32,11 @@
         <img src="https://www.saren.com.br/ws/media-library/b1f96cc81b094b3db7d0eb2c568172e1/saren-logo-400px.png" style="opacity: 0.05; width: 100%; " alt="Marca d'água">
     </div>
     <div class="conteudo" style="display: block; max-width: 100%;">
-        <table class="ui table celled unstackable fixed blue" style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; margin-top: 0em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
+        <table style="width: 100%; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; margin-top: 0em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
             <tr>
-                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; background-color: rgba(167, 203, 230, 0.2);  border: 1px solid rgba(34, 36, 38, 0.15); width: 25%;" width="25%">
+                <td style="padding: 0.78571429em 0.78571429em; text-align: inherit; background-color: rgba(167, 203, 230, 0.2);  border: 1px solid rgba(34, 36, 38, 0.15); width: 25%;" width="25%">
                     <strong style="margin-left: 1em; color: rgb(46, 58, 120);">{TIPO_PEDIDO}<br/>
-                    <strong style="margin-left: 1em; color: rgb(46, 58, 120);">Número Pedido no Cliente(PO):</strong> {SEUPEDIDO} <br/>  
+                    <strong class="verificavariaveis" style="margin-left: 1em; color: rgb(46, 58, 120); ">Número Pedido no Cliente(PO):</strong> {SEUPEDIDO} <br/>  
                     <strong style="margin-left: 1em; color: rgb(46, 58, 120);">Data:</strong> {DATAPEDIDO}<br/>
                     <strong style="margin-left: 1em; color: rgb(46, 58, 120);">Status:</strong> {STATUS}<br/>        
                     <strong style="margin-left: 1em; color: rgb(46, 58, 120);">Nosso Vendedor:</strong> {REPRESEN.RAZAOSOCIAL} - <button style="border: none; color:blue; text-decoration:underline; font-size:x-small; background: none;" id="enviaremailrepresentante">{REPRESEN.EMAIL}</button><br/>
@@ -292,6 +292,17 @@
                 // Redirecionar o usuário para o link de email
                 window.location.href = linkEmail;
             }
+            function verificarCampoVazio(campoId) {
+                const campo = document.getElementById(campoId);
+                if (campo.value.trim() === '') {
+                    campo.style.display = 'none';
+                } else {
+                    campo.style.display = 'block';
+                }
+            }
+            // ... outras funções existentes
+            // Em algum ponto onde você precisa da função de verificação de campo
+            verificarCampoVazio('verificavariaveis');
             document.getElementById('enviaremailrepresentante').addEventListener('click', enviarEmailRepresentante);
             document.getElementById('enviaremailcontato').addEventListener('click', enviarEmailContato);
             document.getElementById('ligarcliente').addEventListener('click', ligacaoparaCliente);
