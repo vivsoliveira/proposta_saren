@@ -57,7 +57,7 @@
                     <strong style="margin-left: 1em; ">Número Pedido no Cliente(PO):</strong> {SEUPEDIDO} <br/>  
                     <strong style="margin-left: 1em; ">Data:</strong> {DATAPEDIDO}<br/>
                     <strong style="margin-left: 1em; ">Status:</strong> {STATUS}<br/>        
-                    <strong style="margin-left: 1em; ">Nosso Vendedor:</strong> {REPRESEN.RAZAOSOCIAL} -  <a href="mailto:{REPRESEN.EMAIL}"><span>{REPRESEN.EMAIL}</span></a> <br/>
+                    <strong style="margin-left: 1em; ">Nosso Vendedor:</strong> {REPRESEN.RAZAOSOCIAL} - <button style="border: none; color:blue; text-decoration:underline; font-size:x-small; background: none;" id="enviaremailrepresentante">{REPRESEN.EMAIL}</button><br/>
                     <strong style="margin-left: 1em; ">Número do Pedido:</strong> {PEDIDO} 
                 </td>
             </tr>
@@ -79,14 +79,14 @@
                     <strong>Endereço:</strong> {ENDERECO} <br/>
                     <strong>Bairro:</strong> {BAIRRO} <br/>
                     <strong>Contato:</strong> {CONTATO.NOME} <br/>
-                    <strong>Contato E-mail:</strong>  <a href="mailto:{CONTATO.EMAIL}">{CONTATO.EMAIL}</a> 
+                    <strong>Contato E-mail:</strong>  <button style="border: none; color:blue; text-decoration:underline; font-size:x-small; background: none;" id="enviaremailcontato">{CONTATO.EMAIL}</button></a> 
                 </td>
                 <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 50%;" width="50%">
                     <strong>Insc. Estadual:</strong> {INSCESTADUAL} <br/>
                     <strong>Município:</strong> {MUNICIPIO} - {UF} <br/>
                     <strong>CEP:</strong>{CEP}<br/>
-                    <strong>Telefone:</strong>  <a href="tel:{CLIENTE.TELEFONE}">{CLIENTE.TELEFONE}</a><br/>
-                    <strong>E-mail:</strong>  <a href="mailto:{CLIENTE.EMAIL}"><span>{CLIENTE.EMAIL}</span></a>
+                    <strong>Telefone:</strong>  <button style="border: none; color:blue; text-decoration:underline; font-size:x-small;background: none;" id="ligarcliente">{CLIENTE.TELEFONE}</button><br/>
+                    <strong>E-mail:</strong>  <button style="border: none; color:blue; text-decoration:underline; font-size:x-small; background: none;" id="enviaremailcliente">{CLIENTE.EMAIL}</button></a>
                 </td>
             </tr>
             <tr>
@@ -292,7 +292,55 @@
             }
           });
         });
-      </script>
+
+        function enviarEmailRepresentante() {
+            // Obter o valor da variável
+            const emailDestinatario = '{REPRESEN.EMAIL}'
+
+            // Construir o link com o valor da variável
+            const linkEmail = "mailto:" + emailDestinatario;
+
+            // Redirecionar o usuário para o link de email
+            window.location.href = linkEmail;
+        }
+        document.getElementById('enviaremailrepresentante').addEventListener('click', enviarEmailRepresentante);
+
+        function enviarEmailContato() {
+            // Obter o valor da variável
+            const emailDestinatario = '{CONTATO.EMAIL}'
+
+            // Construir o link com o valor da variável
+            const linkEmail = "mailto:" + emailDestinatario;
+
+            // Redirecionar o usuário para o link de email
+            window.location.href = linkEmail;
+        }
+        document.getElementById('enviaremailcontato').addEventListener('click', enviarEmailContato);
+
+        function ligacaoparaCliente() {
+            // Obter o valor da variável
+            const telefoneDestinatario = '{CLIENTE.TELEFONE}'
+
+            // Construir o link com o valor da variável
+            const linkEmail = "tel:" + telefoneDestinatario;
+
+            // Redirecionar o usuário para o link de email
+            window.location.href = linkEmail;
+        }
+        document.getElementById('ligarcliente').addEventListener('click', ligacaoparaCliente);
+        
+        function enviarEmailCliente() {
+            // Obter o valor da variável
+            const emailDestinatario = '{CLIENTE.EMAIL}'
+
+            // Construir o link com o valor da variável
+            const linkEmail = "mailto:" + emailDestinatario;
+
+            // Redirecionar o usuário para o link de email
+            window.location.href = linkEmail;
+        }
+        document.getElementById('enviaremailcliente').addEventListener('click', enviarEmailCliente);
+    </script>
 </body>
 <!--/SUBTOTAL1-->
 </html>

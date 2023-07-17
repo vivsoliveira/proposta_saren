@@ -15,7 +15,7 @@
             <tr>
                 <td class="twelve wide" style="padding-top: 2em; text-align: inherit; border-top: none; border-left: none; width: 75%; z-index: 2;" width="75%">
                     <a href="https://www.saren.com.br/">
-                        <span style="padding-left: 2.4rem; font-size: 13px; color: black; font-style: italic; padding-bottom: 0.4rem;">Quem somos?</span> 
+                        <span style="padding-left: 2.5rem; font-size: 13px; color: black; font-style: italic; padding-bottom: 0.4rem;">Quem somos?</span> 
                         <img class="ui left floated small image" src="{IMAGEMLOGO}" style="box-shadow: 0px 0px 10px 0px #888888; border-radius: 0.7; position: relative; background-color: transparent; display: block; margin-right: 1em; margin-bottom: 1em; width: 150px; height: auto; max-width: none; margin-left: 1em;" width="150">
                     </a>
                     <td class="four wide" style="border-top: none; width: 50%; padding-right: 1em;" width="25%">
@@ -39,7 +39,7 @@
                     <strong style="margin-left: 1em; color: rgb(46, 58, 120);">Número Pedido no Cliente(PO):</strong> {SEUPEDIDO} <br/>  
                     <strong style="margin-left: 1em; color: rgb(46, 58, 120);">Data:</strong> {DATAPEDIDO}<br/>
                     <strong style="margin-left: 1em; color: rgb(46, 58, 120);">Status:</strong> {STATUS}<br/>        
-                    <strong style="margin-left: 1em; color: rgb(46, 58, 120);">Nosso Vendedor:</strong> {REPRESEN.RAZAOSOCIAL} - {REPRESEN.EMAIL} <br/>
+                    <strong style="margin-left: 1em; color: rgb(46, 58, 120);">Nosso Vendedor:</strong> {REPRESEN.RAZAOSOCIAL} - <button style="border: none; color:blue; text-decoration:underline; font-size:x-small; background: none;" id="enviaremailrepresentante">{REPRESEN.EMAIL}</button><br/>
                     <strong style="margin-left: 1em; color: rgb(46, 58, 120);">Número do Pedido:</strong> {PEDIDO} 
                 </td>
             </tr>
@@ -63,14 +63,14 @@
                     <strong>Endereço:</strong> {ENDERECO} <br/>
                     <strong>Bairro:</strong> {BAIRRO} <br/>
                     <strong>Contato:</strong> {CONTATO.NOME} <br/>
-                    <strong>Contato E-mail:</strong> {CONTATO.EMAIL}</a> 
+                    <strong>Contato E-mail:</strong>  <button style="border: none; color:blue; text-decoration:underline; font-size:x-small; background: none;" id="enviaremailcontato">{CONTATO.EMAIL}</button></a> 
                 </td>
                 <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 50%;" width="50%">
                     <strong>Insc. Estadual:</strong> {INSCESTADUAL} <br/>
                     <strong>Município:</strong> {MUNICIPIO} - {UF} <br/>
                     <strong>CEP:</strong>{CEP}<br/>
-                    <strong>Telefone:</strong>  {CLIENTE.TELEFONE}</a><br/>
-                    <strong>E-mail:</strong>  {CLIENTE.EMAIL}
+                    <strong>Telefone:</strong>  <button style="border: none; color:blue; text-decoration:underline; font-size:x-small;background: none;" id="ligarcliente">{CLIENTE.TELEFONE}</button><br/>
+                    <strong>E-mail:</strong>  <button style="border: none; color:blue; text-decoration:underline; font-size:x-small; background: none;" id="enviaremailcliente">{CLIENTE.EMAIL}</button></a>
                 </td>
             </tr>
             <tr>
@@ -91,7 +91,7 @@
             </tr>
         </table>
 
-        <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding-left: 0.78571429em ; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); font-size: 1.28em;"> PRODUTOS <br/> <span style="font-style: italic;">Esta cotação é válida até: {DATAVALIDADE}</span></div>
+        <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding-left: 0.78571429em ; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); font-size: 1.28em;"> PRODUTOS <br/> <span style="font-style: italic; font-size: x-small;">Esta cotação é válida até: {DATAVALIDADE}</span></div>
 
         <!--/HEADER-->
         <!--ENDENTREGA-->
@@ -275,6 +275,54 @@
             }
           });
         });
+
+        function enviarEmailRepresentante() {
+            // Obter o valor da variável
+            const emailRepresentante = '{REPRESEN.EMAIL}'
+
+            // Construir o link com o valor da variável
+            const linkEmailRepresentante = "mailto:" + emailRepresentante;
+
+            // Redirecionar o usuário para o link de email
+            window.location.href = linkEmailRepresentante;
+        }
+
+        function enviarEmailContato() {
+            // Obter o valor da variável
+            const emailDestinatario = '{CONTATO.EMAIL}'
+
+            // Construir o link com o valor da variável
+            const linkEmail = "mailto:" + emailDestinatario;
+
+            // Redirecionar o usuário para o link de email
+            window.location.href = linkEmail;
+        }
+
+        function ligacaoparaCliente() {
+            // Obter o valor da variável
+            const telefoneDestinatario = '{CLIENTE.TELEFONE}'
+
+            // Construir o link com o valor da variável
+            const ligacaotelefonica = "tel:" + telefoneDestinatario;
+
+            // Redirecionar o usuário para o link de email
+            window.location.href = ligacaotelefonica;
+        }
+        
+        function enviarEmailCliente() {
+            // Obter o valor da variável
+            const emailDestinatario = '{CLIENTE.EMAIL}'
+
+            // Construir o link com o valor da variável
+            const linkEmail = "mailto:" + emailDestinatario;
+
+            // Redirecionar o usuário para o link de email
+            window.location.href = linkEmail;
+        }
+        document.getElementById('enviaremailrepresentante').addEventListener('click', enviarEmailRepresentante);
+        document.getElementById('enviaremailcontato').addEventListener('click', enviarEmailContato);
+        document.getElementById('ligarcliente').addEventListener('click', ligacaoparaCliente);
+        document.getElementById('enviaremailcliente').addEventListener('click', enviarEmailCliente);
       </script>
 </body>
 <!--/SUBTOTAL1-->
