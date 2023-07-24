@@ -1,0 +1,230 @@
+<html>
+<!--HEADER-->
+<body style="margin: 0px; padding: 0px; overflow-x: hidden; min-width: 320px; background: #FFFFFF; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; line-height: 1.4285em; color: rgba(0, 0, 0, 0.87); font-smoothing: antialiased; font-size: 10px; padding-top: 20px;">
+    <div class="ui container" style="display: block; max-width: 100%;">
+        <table class="ui table celled unstackable fixed blue" style="width: 100%; background: #FFFFFF; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; margin-top: 0em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
+            <tr>
+                <td class="twelve wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none; width: 75%;" width="75%">
+                    <img class="ui left floated small image" src="{IMAGEMLOGO}" style="border: 0; position: relative; vertical-align: middle; background-color: transparent; display: block; float: left; margin-right: 1em; margin-bottom: 1em; width: 150px; height: auto; font-size: 0.92857143rem; max-width: none;" width="150">
+                    <p style="margin: 0em 0em 1em; line-height: 1.4285em; margin-bottom: 0em;">
+                        <strong>{FILIAL.ABREVIATURA} - {EMPRESA.RAZAOSOCIAL}</strong> <br/>
+                        {FILIAL.ENDERECO} {FILIAL.NUMEROEND} {FILIAL.COMPLEMENTOEND} – {FILIAL.MUNICIPIO} <br/>
+                        {FILIAL.UF} - CEP {FILIAL.CEP} - Tel. {FILIAL.TELEFONE}<br/>
+                        CNPJ: {FILIAL.CNPJ} - Inscr.Estadual {FILIAL.IE}
+                    </p>
+                </td>
+                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
+                    <strong>{TIPO_PEDIDO}:</strong> {PEDIDO}<br/>
+                    <strong>Data:</strong> {DATAPEDIDO}<br/>
+                    <strong>Status:</strong> {STATUS}
+                </td>
+            </tr>
+        </table>
+
+        <table class="ui table celled unstackable fixed blue" style="width: 100%; background: #FFFFFF; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
+            <tr>
+                <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none;">
+                    <div class="ui HEADER"> FATURAMENTO </div>
+                    <strong>Cliente:</strong> {CLIENTE} - {CLIENTE.RAZAOSOCIAL} - ({CLIENTE.NOMEFANTASIA})
+                </td>
+            </tr>
+            <tr>
+                <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none; width: 50%;" width="50%">
+                    <strong>CNPJ:</strong> {CNPJ} <br/>
+                    <strong>Endereço:</strong> {ENDERECO} <br/>
+                    <strong>Bairro:</strong> {BAIRRO} <br/>
+                    <strong>Contato:</strong> {CONTATO.NOME}
+                    <strong>E-mail:</strong> {CLIENTE.EMAIL} <br/>
+                </td>
+                <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 50%;" width="50%">
+                    <strong>Insc. Estadual:</strong> {INSCESTADUAL} <br/>
+                    <strong>Município:</strong> {MUNICIPIO} - {UF} <br/>
+                    <strong>CEP:</strong> {CEP}
+                    <strong>Telefone:</strong> {CLIENTE.TELEFONE} <br/>                                    
+                    <strong>Contato E-mail:</strong> {CONTATO.EMAIL}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none;">
+                    <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); margin-top: -0.14285em; margin-bottom: 0em; font-size: 1.28em;"> CONDIÇÕES </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none; width: 50%;" width="50%">
+                    <strong>Nosso Vendedor:</strong> {REPRESEN.RAZAOSOCIAL} - {REPRESEN.EMAIL} <br/>
+                    <strong>Transportadora:</strong> {TRANSPORTADORA} - {TRANSP.RAZAOSOCIAL} <br/>
+                    <strong>Data Validade:</strong> {DATAVALIDADE}  <br/> 
+                    <strong>Natureza de Operação:</strong> {NATOPERACAO} - {NATOPER.DESCRICAO} <br/>  
+                                                        
+                </td>
+                <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 50%;" width="50%">
+                     <strong>Número Pedido no Cliente(PO):</strong> {SEUPEDIDO} <br/>                                     
+                     <strong>Tipo de Frete:</strong>  {TIPOFRETE} <br/>
+                     <strong>Data Prev. Fat.:</strong> {DATAPREVFAT} <br/>
+                     
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none;">
+                    <strong>Condição de Pagamento:</strong> {CONDPAG.DESCRICAO} {PAGAMENTOS1} {PAGAMENTOS2}<br/>
+                </td>
+            </tr>
+        </table>
+        <!--/HEADER-->
+        <!--ENDENTREGA-->
+        <table class="ui table celled unstackable fixed blue" style="width: 100%; background: #FFFFFF; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
+            <tr>
+                <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none;">
+                    <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); margin-top: -0.14285em; margin-bottom: 0em; font-size: 1.28em;"> ENTREGA </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none; width: 50%;" width="50%">
+                    <strong>Endereço:</strong> {ENDENT}<br/>
+                    <strong>Município:</strong> {MUNENT} 
+                </td>
+                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
+                    <strong>UF:</strong> {UFENT} <br/>
+                    <strong>Bairro:</strong> {BAIENT} 
+                </td>
+                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
+                     <strong>CEP:</strong> {CEPENT}  
+                    
+                </td>
+            </tr>
+        </table>
+        <!--/ENDENTREGA-->
+        <!--ENDCOBRANCA-->
+        <table class="ui table celled unstackable fixed blue" style="width: 100%; background: #FFFFFF; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
+            <tr>
+                <td colspan="2" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none;">
+                    <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); margin-top: -0.14285em; margin-bottom: 0em; font-size: 1.28em;"> COBRANÇA </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="eight wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: none; width: 50%;" width="50%">
+                    <strong>Endereço:</strong> {ENDCOB}<br/>
+                    <strong>Município:</strong> {MUNCOB} 
+                </td>
+                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
+                    <strong>UF:</strong> {UFCOB} <br/>
+                    <strong>Bairro:</strong> {BAICOB}
+                </td>
+                <td class="four wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: 1px solid rgba(34, 36, 38, 0.1); border-left: 1px solid rgba(34, 36, 38, 0.1); width: 25%;" width="25%">
+                    <strong>CEP:</strong> {CEPCOB}
+                </td>
+            </tr>
+        </table>
+        <!--/ENDCOBRANCA-->
+        <!--SUBHEADER-->
+        <div class="ui header" style="border: none; margin: calc(2rem -  0.14285em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2857em; text-transform: none; color: rgba(0, 0, 0, 0.87); font-size: 1.28em;"> PRODUTOS </div>
+        <table class="ui table celled compact small unstackable blue" style="width: 100%; background: #FFFFFF; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; border-top: 0.2em solid #2185D0; font-size: 0.9em;" width="100%" align="left">
+            <thead>
+                <tr>
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); border-radius: 0.28571429rem 0em 0em 0em; padding-left: 0.7em; padding-right: 0.7em; border-left: none;">#</th>
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Produto</th>
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Descrição</th>                                        
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Un</th>                                        
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Qd</th>   					
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Preço Unitário</th>
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Preço Sem IPI</th>
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Valor IPI</th>
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">ST</th>
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">% Desc.</th>
+                    <th style="background: #F9FAFB; text-align: inherit; color: rgba(0, 0, 0, 0.87); padding: 0.92857143em 0.78571429em; border-bottom: 1px solid rgba(34, 36, 38, 0.1); border-radius: 0em 0.28571429rem 0em 0em; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">Preço Total Com IPI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--/SUBHEADER-->
+                <!--BODY-->
+                <tr> 
+                    <td style="text-align: inherit; border-top: none; padding: 0.5em 0.7em; border-left: none;">{ITEM}</td>                                        
+                    <td style="text-align: inherit; border-top: none; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">{CODPRODUTO}</td>
+                    <td style="text-align: inherit; border-top: none; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);">{DESCPRODUTO}</td>
+                    <td class="center aligned" style="border-top: none; text-align: center; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" align="center">{UN}</td>                    				
+                    <td class="right aligned" style="border-top: none; text-align: right; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" align="right">{QUANTIDADE}</td>   						
+                    <td class="right aligned" style="border-top: none; text-align: right; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" align="right">{PRECOUNITARIO}</td>
+                    <td class="right aligned" style="border-top: none; text-align: right; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" align="right">{PRECOSEMIPI}</td>
+                    <td class="right aligned" style="border-top: none; text-align: right; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" align="right">{VALIPI}</td>
+                    <td class="right aligned" style="border-top: none; text-align: right; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" align="right">{ST}</td>
+                    <td class="right aligned" style="border-top: none; text-align: right; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" align="right">{PERCDESC}</td>
+                    <td class="right aligned" style="border-top: none; text-align: right; padding: 0.5em 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" align="right">{VALTOTAL}</td>
+                </tr>   
+              
+            <!--/BODY-->
+            <!--SUBTOTAL1-->
+            </tbody>
+            <tfoot style="box-shadow: none;"> 
+                <tr>
+                    <th class="right aligned" colspan="6" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; border-radius: 0em 0em 0em 0.28571429rem; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: none;" valign="middle" align="right">Total dos Produtos</th>
+                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right">{PRECOSEMIPI}</th>
+                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right">{VALIPI}</th>
+                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right"></th>
+                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right"></th>
+                    <th class="right aligned" style="border-top: 1px solid rgba(34, 36, 38, 0.15); background: #F9FAFB; color: rgba(0, 0, 0, 0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; border-radius: 0em 0em 0.28571429rem 0em; text-align: right; padding-left: 0.7em; padding-right: 0.7em; border-left: 1px solid rgba(34, 36, 38, 0.1);" valign="middle" align="right">{VALTOTAL}</th>
+                </tr>                                    
+            </tfoot>
+        </table>
+        <table class="ui table celled unstackable fixed blue" style="width: 100%; background: #FFFFFF; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; table-layout: fixed; border-top: 0.2em solid #2185D0;" width="100%" align="left">
+            <tr>
+                <td class="six wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none; width: 37.5%;" width="37.5%">
+                    <strong>Valor de Frete:</strong>  {VALFRETE} <br/>
+                    <strong>Valor Desconto</strong> {VALDESC} <br/>
+                    <strong>Valor Total Documento:</strong> {VALTOTALDOC}
+                </td>
+                <td class="five wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: 1px solid rgba(34, 36, 38, 0.1); width: 31.25%;" width="31.25%">
+                    <strong>Valor de Seguro:</strong> {VALSEGURO} <br/>
+                    <strong>Valor Substituição Tributária:</strong> {VALSUBSTRI}  <br/>
+                    <strong> Valor Enc. Financeiros:</strong> {VALENCFIN}
+                </td>
+                <td class="five wide" style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: 1px solid rgba(34, 36, 38, 0.1); width: 31.25%;" width="31.25%">
+                    <strong> Peso Líquido:</strong> {PESOLIQUIDO}  <br/>
+                    <strong> Peso Bruto:</strong> {PESOBRUTO}
+                </td>
+            </tr>
+        </table>
+        <table class="ui table celled unstackable blue" style="width: 100%; background: #FFFFFF; margin: 1em 0em; border: 1px solid rgba(34, 36, 38, 0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0, 0, 0, 0.87); border-collapse: separate; border-spacing: 0px; font-size: 1em; margin-bottom: 0em; border-top: 0.2em solid #2185D0;" width="100%" align="left">
+            <tr>
+                <td style="padding: 0.78571429em 0.78571429em; text-align: inherit; border-top: none; border-left: none;">
+                    <div class="ui HEADER"><strong> OBSERVAÇÕES </strong> </div> <br/>
+                    
+					<strong>ORÇAMENTO VÁLIDO POR 30 DIAS</strong><br/>
+					Os preços desta e qualquer oferta, confirmação ou Contrato são em moeda brasileira e poderão sofrer alteração de acordo com a variação cambial do dolar, conforme
+					descrito nos Termos e Condições Gerais de Venda da Fornecedora. A empresa adicionará impostos, encargos e tributos em caráter de substituto tributário ao preço das vendas
+					quando for exigida por lei a pagá-los ou cobrá-los, e esses serão pagos pelo Cliente juntamente com o preço. <br/>
+
+					<strong>GARANTIA DOS PRODUTOS<br/></strong>
+					 A Fornecedora garante que, de acordo com o uso normal em conformidade com o manual de usuário aplicável, os Produtos possuirão garantia de acordo com o
+					disposto no documento denominado Termos e Condições da Garantia, a ser disponibilizado pela Fornecedora ao Cliente e/ou disponível em seu website, no endereço
+					http://www.lighting.philips.com.br/suporte/suporte-para-produtos/garantia. Nos casos de sistemas e serviços a Fornecedora enviará uma Proposta Técnica a ser assinada em conjunto com a presente Proposta Comercial, com vistas a esclarecer
+					eventuais especificidades aplicáveis.<br/>
+
+					<strong>CONDIÇÕES COMERCIAIS:</strong><br/>
+					A validação da presente proposta depende de aprovação de crédito da instituição financeira financiadora. A Fornecedora não se responsabiliza por atos de terceiros, sejam particulares, órgãos oficiais, ou quaisquer outras organizações que alterem, independentemente da vontade das partes aqui envolvidas, os termos e condições aqui apresentados.
+					Estão exclusos do escopo desta proposta todo e qualquer serviço e/ou materiais não descritos no escopo acima. 
+					Para o caso de pessoa jurídica, o(s) signatário(s) desta proposta, declara(m), sob a pena da lei que tem poderes para assinar e assumir compras desta natureza em nome da sociedade.<br/>
+
+					<strong>LIMITAÇÃO DE RESPONSABILIDADE:</strong><br/>
+					A Fornecedora não será responsável por quaisquer lucros cessantes, danos indiretos, incidentes ou punitivos, decorrentes do, ou relacionados ao contrato ou à venda
+					de quaisquer produtos ou serviços pela Fornecedora, ou ao uso dos mesmos, ainda que a Fornecedora tenha sido avisada, ou estiver ciente, da possibilidade desses danos.
+					A responsabilidade da Fornecedora perante ao Cliente de acordo com qualquer contrato não excederá a 20% (vinte por cento) da venda do Produto ou serviço
+					relacionado.<br/>
+
+					<strong>ENTREGA E QUANTIDADES:</strong><br/>
+					(a ) Os Produtos serão entregues conforme especificado na Proposta ou acordado posteriormente com o Cliente, por escrito. As datas de entrega
+					comunicadas ou reconhecidas pela Fornecedora poderão ser meramente estimativas. A Fornecedora envidará todos os esforços comercialmente razoáveis para cumprir
+					as datas de entrega comunicadas ou por ela reconhecidas, desde que o Cliente forneça todos os meios necessários e as informações suficientes ao
+					cumprimento da entrega na data acordada.<br/>
+					(b) Caso determinada entrega não ocorra na data acordada, o Cliente entregará à Empresa um aviso por escrito no prazo de 24h (vinte e quatro horas).
+					Neste caso, as partes deverão acordar uma nova data de entrega que seja razoável e aceita por ambas as Partes.<br/>
+					(c) A transferência da propriedade dos Produtos dar-se-á mediante o pagamento integral do valor correspondente ao(s) Produto(s).<br/>
+					
+					{TEXTO}
+                </td>
+            </tr>
+        </table>
+    </div>
+	<div style="page-break-after:auto"></div>
+</body>
+<!--/SUBTOTAL1-->
+</html>
